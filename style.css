@@ -1,0 +1,212 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Playfair Display', serif;
+    background: linear-gradient(to right, #e0e0e0, #f4f4f4); /* Soft gray gradient */
+    color: #333; /* Dark gray text for contrast */
+    line-height: 1.6;
+  }
+  
+  header {
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 4rem;
+    color: #8a8a8a; /* Light gray for the title */
+    animation: fadeIn 2s ease-out;
+  }
+  
+  .subtitle {
+    font-size: 1.5rem;
+    color: #b8b8b8; /* Medium gray for subtitle */
+  }
+  
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    padding: 40px;
+  }
+  
+  .image-container {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: slideIn 1.5s ease-out;
+  }
+  
+  .image {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+/* New Image Container Styles */
+.new-image-container {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: fadeUpScale 1.5s ease-out;
+  }
+  
+  .new-image {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .new-description {
+    font-size: 1.2rem;
+    color: #5f5f5f; /* Slightly darker gray for text */
+    font-style: italic;
+    margin-top: 15px;
+  }
+  
+  /* New Animation for Image Container */
+  @keyframes fadeUpScale {
+    0% {
+      opacity: 0;
+      transform: translateY(50px) scale(0.8);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+  
+
+  .description {
+    font-size: 1.2rem;
+    color: #5f5f5f; /* Slightly darker gray for text */
+    font-style: italic;
+    margin-top: 15px;
+  }
+  
+  .merch-container {
+     width: 100%;
+    max-width: 400px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: bounceIn 1.5s ease-out;
+  }
+  
+  .merch {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    animation: bounceIn 1.5s ease-out;
+  }
+  
+  .merch-text {
+    font-size: 1rem;
+    color: #b8b8b8; /* Light gray for merch text */
+    margin-top: 10px;
+  }
+
+
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .last-message {
+    font-size: 0.9rem;
+    color: #f4f4f4; /* Off-white for footer text */
+    font-family: 'Dancing Script', cursive;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .footer-text {
+    font-size: 0.9rem;
+    color: #f4f4f4; /* Off-white for footer text */
+    font-family: 'Dancing Script', cursive;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes bounceIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .content {
+      padding: 20px;
+    }
+  
+    .title {
+      font-size: 3rem;
+    }
+  
+    .subtitle {
+      font-size: 1.2rem;
+    }
+  
+    .image {
+      width: 90%;
+    }
+  
+    .merch {
+      width: 80%;
+    }
+  
+    .footer-text {
+      font-size: 0.8rem;
+    }
+  }
+  
